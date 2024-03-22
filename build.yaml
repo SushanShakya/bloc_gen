@@ -1,0 +1,8 @@
+builders:
+  bloc_gen:
+    import: "package:bloc_gen/builder.dart"
+    builder_factories: ["blocGenBuilder"]
+    build_extensions:
+      { ".dart": [".cubit.dart", ".inteface.dart", ".repo.dart"] }
+    auto_apply: dependents
+    build_to: source
